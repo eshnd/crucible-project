@@ -121,15 +121,13 @@ choice1 = make_slide("image1.jpg", "ababhbdas", ["A", "B", "C", "D"])
 
 
 
-
-
-
-
-
 end_text = font.render("the end!", True, (255, 255, 255))
+end_text2 = font.render("https://github.com/eshnd/crucible-project", True, (255, 255, 255))
 end_rect = end_text.get_rect(center=(WIDTH // 2, HEIGHT // 2))
+end_rect2 = end_text2.get_rect(center=(WIDTH // 2, (HEIGHT // 2)+25))
 screen.fill((30, 30, 30))
 screen.blit(end_text, end_rect)
+screen.blit(end_text2, end_rect2)
 pygame.display.flip()
 while True:
     for event in pygame.event.get():
