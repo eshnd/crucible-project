@@ -1,5 +1,5 @@
 import pygame
-import sys
+import sys # sys does stuff
 pygame.init()
 WIDTH, HEIGHT = 900, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
